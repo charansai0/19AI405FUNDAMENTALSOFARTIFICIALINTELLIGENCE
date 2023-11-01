@@ -53,48 +53,28 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
  <li>If Not Visited, add it to the STACK. Else Call The Function Again Until No more nodes needs to be visited.</li>
 </ol></B>
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
-8 9 <BR>
-A B <BR>
-A C <BR>
-B E <BR>
-C D <BR>
-B D <BR>
-C G <BR>
-D F <BR>
-G F <BR>
-F H <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
+## Sample Input
+
+8 9 
+A B 
+A C 
+B E 
+C D 
+B D 
+C G
+D F 
+G F 
+F H 
+## Sample Output
+
 ['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
 
-<hr>
-
-<hr>
-<h3>Sample Input</h3>
-<hr>
-5 5 <BR>
-0 1 <BR>
-0 2 <BR>
-0 3 <BR>
-2 3 <BR>
-2 4 <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
-['0', '1', '2', '3', '4']
-
-<hr>
 ## PROGRAM:
 ~~~
 DEVELOPED BY : v.charan sai
 
 REGISTER NUMBER : 212221240061
-~~~
-~~~
+
 from collections import defaultdict
 def dfs(graph,start,visited,path):
    path.append(start)
